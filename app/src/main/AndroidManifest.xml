@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.photo.PhotoIntentActivity" />
+        <activity android:name=".ui.select.SelectFileActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
