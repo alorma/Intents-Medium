@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import com.alorma.intents.ui.IntentLesson
 import com.alorma.intents.ui.IntentsExampleAdapter
+import com.alorma.intents.ui.contact.SelectContactActivity
 import com.alorma.intents.ui.photo.PhotoIntentActivity
 import com.alorma.intents.ui.select.SelectFileActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity(), IntentsExampleAdapter.OnLessonCallback
 
         adapter.add(IntentLesson("Take a photo", PhotoIntentActivity::class.java))
         adapter.add(IntentLesson("Select file", SelectFileActivity::class.java))
-        adapter.add(IntentLesson("Select contact"))
+        adapter.add(IntentLesson("Select contact", SelectContactActivity::class.java))
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter
